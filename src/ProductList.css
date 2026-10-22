@@ -1,0 +1,151 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #4caf50;
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  font-size: 2rem;
+}
+
+.brand h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.brand i {
+  font-size: 0.85rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 1.15rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.cart-link {
+  position: relative;
+  display: flex;
+}
+
+.cart-count {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  border-radius: 11px;
+  background: #fff;
+  color: #2e7d32;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px 60px;
+}
+
+.category-title {
+  text-align: center;
+  margin: 36px 0 20px;
+  color: #2e7d32;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-title {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.product-description {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.product-price {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #c62828;
+}
+
+.product-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.product-button:hover {
+  background: #3d8b40;
+}
+
+.product-button.added-to-cart,
+.product-button:disabled {
+  background: #9e9e9e;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

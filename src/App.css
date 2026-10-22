@@ -1,0 +1,86 @@
+.app-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.landing-page {
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+}
+
+.landing-page.fade-out {
+  display: none;
+}
+
+/* background image for the landing page */
+.background-image {
+  position: fixed;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.background-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.content {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 40px 24px;
+  flex-wrap: wrap;
+}
+
+.landing_content {
+  color: #fff;
+  text-align: center;
+}
+
+.landing_content h1 {
+  font-size: 2.6rem;
+  margin: 0 0 10px;
+}
+
+.landing_content p {
+  font-size: 1.3rem;
+  margin: 12px 0 28px;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  background: #4caf50;
+}
+
+.get-started-button {
+  padding: 14px 34px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: #4caf50;
+  border: none;
+  border-radius: 6px;
+}
+
+.get-started-button:hover {
+  background: #3d8b40;
+}
+
+.product-list-container {
+  display: none;
+}
+
+.product-list-container.visible {
+  display: block;
+}
